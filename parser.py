@@ -2,7 +2,7 @@ import json
 
 
 def parse(s):
-    with open("./dataset/Annotations/instances_" + s + ".json") as f:
+    with open("./dataset/annotations/instances_" + s + ".json") as f:
         data = json.load(f)
 
     images = data["images"]
