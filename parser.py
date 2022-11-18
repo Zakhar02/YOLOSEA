@@ -21,7 +21,7 @@ def parse(s):
         center = x/width + w/2, y/height + h/2
         with open("./dataset/labels/" + s + '/' + str(name) + ".txt", 'a') as f:
             f.write("{} {} {} {} {}\n".format(
-                a["category_id"], center[0], center[1], w, h))
+                int(a["category_id"]) - 1, center[0], center[1], w, h))
 
 
 dir = ['./dataset/labels/train', './dataset/labels/val']
