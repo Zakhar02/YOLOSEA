@@ -1,3 +1,6 @@
 ## YOLO Sea Object Detection
 
-python train.py --epochs 3 --data ../dataset.yml --weights yolov5n-cls.pt --cfg models/yolov5n.yaml
+python train.py --rect --epochs 3 --data ../dataset.yml --weights yolov5m-cls.pt --cfg models/yolov5m.yaml
+
+--rect - for rectangular training, in contrast to mosaic, finds bounding box as a whole
+--weights - may be found on https://github.com/ultralytics/yolov5#pretrained-checkpoints
